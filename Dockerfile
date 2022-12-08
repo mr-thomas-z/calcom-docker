@@ -1,4 +1,4 @@
-FROM node:16 as builder
+FROM --platform=linux/arm64 node:16 as builder
 
 WORKDIR /calcom
 ARG NEXT_PUBLIC_LICENSE_CONSENT
